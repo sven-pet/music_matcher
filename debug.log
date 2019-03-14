@@ -1,0 +1,13 @@
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "spotify_connection_spotify_user"."id", "spotify_connection_spotify_user"."user_id", "spotify_connection_spotify_user"."state", "spotify_connection_spotify_user"."access_token", "spotify_connection_spotify_user"."scope", "spotify_connection_spotify_user"."expires_in", "spotify_connection_spotify_user"."refresh_token" FROM "spotify_connection_spotify_user" WHERE "spotify_connection_spotify_user"."user_id" = 'sven'; args=('sven',)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "spotify_connection_spotify_user" SET "user_id" = 'sven', "state" = '2a90b14b-89ce-43d7-aa71-d1e64f25fe79', "access_token" = '', "scope" = '', "expires_in" = 0, "refresh_token" = '' WHERE "spotify_connection_spotify_user"."id" = 1; args=('sven', '2a90b14b-89ce-43d7-aa71-d1e64f25fe79', '', '', 0, '', 1)
+"GET /spotify/connect/ HTTP/1.1" 200 627
+(0.000) SELECT "spotify_connection_spotify_user"."id", "spotify_connection_spotify_user"."user_id", "spotify_connection_spotify_user"."state", "spotify_connection_spotify_user"."access_token", "spotify_connection_spotify_user"."scope", "spotify_connection_spotify_user"."expires_in", "spotify_connection_spotify_user"."refresh_token" FROM "spotify_connection_spotify_user" WHERE "spotify_connection_spotify_user"."user_id" = 'sven'; args=('sven',)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "spotify_connection_spotify_user" SET "user_id" = 'sven', "state" = '2a90b14b-89ce-43d7-aa71-d1e64f25fe79', "access_token" = '', "scope" = '', "expires_in" = 0, "refresh_token" = '' WHERE "spotify_connection_spotify_user"."id" = 1; args=('sven', '2a90b14b-89ce-43d7-aa71-d1e64f25fe79', '', '', 0, '', 1)
+"GET /spotify/connect/ HTTP/1.1" 200 627
